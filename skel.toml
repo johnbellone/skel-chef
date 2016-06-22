@@ -1,0 +1,20 @@
+[skeleton]
+name = "chef"
+version = "1.0"
+authors = ["John Bellone <jbellone@bloomberg.net"]
+
+---
+name: chef
+variables:
+  - author
+  - org
+  - email
+  - name
+  - description
+  - long_description
+  - version
+templates:
+  - policyfile:
+      output: Policyfile.rb
+  - repo
+  - cookbook
